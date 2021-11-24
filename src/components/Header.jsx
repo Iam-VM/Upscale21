@@ -11,6 +11,9 @@ const Header = ({headerRef}) => {
           <div className="logo-container">
               <img className="logo" src={upscale} alt="Upscale'21"/>
           </div>
+          <a className={"register-now-btn"} href={"https://www.yepdesk.com/embed/upscale-21"} target={"_blank"}>
+              <span className={"register-now-btn-text"}>Register Now</span>
+          </a>
       <div className='img-tags'>
         <img className='sponsor-img' src={sb} alt='IEEE SB Palakkad' />
         <img className='sponsor-img' src={iedc} alt='IEDC' />
