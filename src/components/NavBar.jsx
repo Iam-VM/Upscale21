@@ -3,6 +3,17 @@ import {RiHomeLine} from "react-icons/ri";
 import { IoBulbOutline } from "react-icons/io5";
 import { BsCalendarEvent, BsPeople, BsTelephone } from "react-icons/bs";
 
+// for mobile sidenav animation
+import { flipInY } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
+// import HamburgerButton from "./hamburger";
+
+const sideNavAnimation = keyframes`${flipInY}`;
+const NavUL = styled.ul`
+  //opacity: 0.9;
+  animation: 0.6s ${sideNavAnimation};
+`;
+
 const NavBar = ({
   scrollToRef,
   headerRef,
@@ -11,7 +22,7 @@ const NavBar = ({
   scheduleRef,
 }) => {
   return (
-    <nav className='navbar navbar-expand-md navbar navbar-dark fixed-top '>
+    <nav className='navbar navbar-expand-md navbar navbar-dark fixed-top'>
       <img src={navbrand} className='navbar-brand' alt=',.' />
       <button
         className='navbar-toggler ml-auto'
@@ -23,9 +34,10 @@ const NavBar = ({
         aria-label='Toggle navigation'
       >
         <span className='navbar-toggler-icon'></span>
+        {/*<HamburgerButton />*/}
       </button>
       <div className='collapse navbar-collapse' id='navbarNav'>
-        <ul className='navbar-nav ml-auto'>
+        <NavUL className='navbar-nav ml-auto'>
           <li className='navbar-nav-brand'>
             <img src={navbrand} alt='..' className='nav-img' />
           </li>
@@ -63,7 +75,7 @@ const NavBar = ({
               <span className='nav-text'> Contact Us</span>
             </div>
           </li>
-        </ul>
+        </NavUL>
       </div>
     </nav>
   );
