@@ -5,7 +5,7 @@ const Schedule = ({ scheduleRef }) => {
   return (
     <>
       <h1 className='sd-main-head' ref={scheduleRef}>
-        Schedules
+        Schedule
       </h1>
       <div className='sd-container'>
         {schedules.map((schedule) => (
