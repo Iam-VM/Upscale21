@@ -1,8 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #414141;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    display: none;
+  }
+}
+
+
+
+.register-now-btn {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  border-radius: 4px;
+  background: rgb(123,45,186);
+  background: linear-gradient(90deg, rgba(123,45,186,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+  /*z-index: 1000;*/
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  transition: all 0.25s;
+}
+
+.register-now-btn:hover {
+  color: #E1E1E1;
+}
+
+.register-now-btn-text {
+  background: transparent;
+}
+
+.register-now-btn:hover {
+  cursor: pointer;
+  width: ;
 }
 
 .demo{
@@ -47,7 +91,6 @@
 .navbar-nav-brand{
   width: 100%;
   background-color: transparent;
-
 }
 .nav-img{
   width: 66%;
@@ -57,15 +100,17 @@
   font-size: 85%;
   background-color: transparent;
 }
-
 .container-fluid {
   margin-top: 1rem;
 }
 @media only screen and (min-width:768px) {
+  .register-now-btn {
+    margin-bottom: 0;
+  }
   .navbar-nav-brand{
     display: none;
   }
-  
+
   .navbar-nav{
     padding-bottom: 0;
     width: unset;
@@ -99,7 +144,7 @@
     flex-wrap: wrap;
 }
 .logo-container {
-
+  /*border: 1px solid red;*/
   min-width: 400px;
   min-height: 400px;
 }
@@ -112,8 +157,8 @@
   position: absolute;
   width: 400px;
   height: 400px;
-  top: 99px;
-  
+  /*top: 99px;*/
+
 }
 .info-container {
   display: flex;
@@ -228,12 +273,12 @@
         min-width: 200px;
         min-height: 20px;
     }
-    .logo{
-        position: absolute;
-        top: -100px;
-        width: 120px;
-        height: 295px;
-    }
+    /*.logo{*/
+    /*    position: absolute;*/
+    /*    top: -100px;*/
+    /*    width: 120px;*/
+    /*    height: 295px;*/
+    /*}*/
     .sponsor-img{
         width: 80px;
         height: 20px;
@@ -264,7 +309,7 @@
     padding: 1rem;
     position: relative;
     overflow-x: hidden;
-  
+
   }
   .footer{
     flex-direction: column;
