@@ -1,0 +1,67 @@
+.register-container{
+    margin: 1rem 6rem;
+    padding: .5rem;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.877);
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.register-body{
+    display: flex;
+    
+}
+.register-text{
+    width: 81%;
+    margin-left: 1rem;
+}
+.register-btn{
+    width: 16%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.reg-btn{
+    margin-right: 1rem;
+    padding: .5rem 1rem;
+    color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        45deg
+        , #793cff, #9545b1);
+        outline: none;
+        border: none;
+        box-shadow: 0px 1px 3px rgb(255 255 255 / 70%);
+}
+@media only screen and (max-width: 1108px){
+    .register-container{
+        margin: 1rem 3rem;
+    }
+    .register-text{
+        width: 60%;
+    }
+    .register-btn{
+        width: 28%;
+    }
+}
+@media only screen and (max-width:769px){
+    .register-body{
+        flex-direction: column;
+        text-align: center;
+    }
+    .register-container{
+        margin: 1rem 4rem;
+    }
+    .register-text{
+        width: 100%;
+        margin-left: 0;
+    }
+    .register-btn{
+        width: 100%;
+        
+        justify-content: center;
+    }
+    .reg-btn{
+        margin-right: 0;
+    }
+}

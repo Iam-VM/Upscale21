@@ -1,14 +1,13 @@
 import React from 'react'
 import "./scheduleCard.css";
-const scheduleCard = ({day,lists,passId}) => {
+
+const scheduleCard = ({day, para}) => {
     return (
         <div className="sd-card">
             <div className="sd-day">{day}</div>
-            <ul className="sd-list">
-                {lists.map((list,ind) => (
-                    <li id={ind+passId} className="sd-li">{ list}</li>
-                ))}
-            </ul>
+            <div className="sd-des">
+                <p className="sd-text">{para}</p>
+            </div>
         </div>
     )
 }

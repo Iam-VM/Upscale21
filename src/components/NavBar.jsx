@@ -20,6 +20,7 @@ const NavBar = ({
   infoRef,
   speakerRef,
   scheduleRef,
+  contactRef,
 }) => {
   return (
     <nav className='navbar navbar-expand-md navbar navbar-dark fixed-top'>
@@ -69,7 +70,7 @@ const NavBar = ({
               <span className='nav-text'> Speakers</span>
             </div>
           </li>
-          <li className='nav-item '>
+          <li className='nav-item ' onClick={() => scrollToRef(contactRef)}>
             <div className='nav-link'>
               <BsTelephone className='icon' />
               <span className='nav-text'> Contact Us</span>

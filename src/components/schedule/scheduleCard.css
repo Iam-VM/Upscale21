@@ -1,3 +1,17 @@
+.shedule{
+    width: 100%;
+
+}
+.sheduleimg{
+    width: 64%;
+    display:block;
+    margin: 1rem auto;
+}
+.shedulemob{
+    width:90%;
+    margin: 1rem auto;
+    display: none;
+}
 .sd-container{
     width: 100%;
     display: grid;
@@ -25,20 +39,28 @@
     font-weight: 500;
     border-top: 7px solid #313131;
     margin-top: 1rem;
+    transition: all 2s ease-in-out;
+    padding-bottom: 20px;
 }
-/* .sd-card :hover{
-    color:   #414141;
-    background-color: #FFFFFF;
-} */
+.sd-card:hover{
+    background-image: linear-gradient(
+        45deg
+        , #793cff, #9545b1)
+}
+
 .sd-day{
     margin-left: 2rem;
     font-size: 3rem;
     font-weight: 700;
 }
-.sd-list ::marker{
- font-size: 1.5rem;
- margin-right: 0;
+.sd-des{
+    margin-left: 2rem;
 }
+.sd-text{
+    font-size: 82%;
+    color: rgba(255, 255, 255, 0.81);
+}
+
 
 @media only screen and (max-width: 769px) {
     .sd-container{
@@ -51,7 +73,16 @@
         border-top: none;
         border-left: 7px solid #313131;
         font-size: 0.8rem;
-        width: 300px;
+        width:69%;
         height: auto;
+    }
+    .sheduleimg{
+        display: none;
+    }
+    .shedulemob{
+        display: block;
+    }
+    .sd-text{
+        font-size: 120%;
     }
 }

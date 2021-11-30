@@ -1,12 +1,12 @@
 
 .info-card {
-  border-bottom: 1px solid black;
   padding-bottom: 0;
   width: 1000px;
   display: flex;
   color: #fff;
   align-items: center;
 }
+
 .info-heading {
   margin-left: 0;
   display: flex;
@@ -27,6 +27,7 @@
   align-self: flex-start;
   margin-bottom: auto;
   margin-top: 3rem;
+  text-align: justify;
 }
 .info-img {
   width: 450px;

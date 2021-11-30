@@ -1,7 +1,8 @@
 import imgOne from '../../assets/sooraj.png'
 import imgTwo from '../../assets/Harikrishnan.jpeg'
 import imgThree from "../../assets/Robin.jpeg";
-
+import imgFour from "../../assets/haris.jpg"
+import imgFive from '../../assets/juliana.jpg'
 export const speakers = [
   {
     id: 1,
@@ -27,4 +28,22 @@ export const speakers = [
     imgSrc: imgThree,
     alt: "speaker",
   },
+  {
+    id: 4,
+    name: "Haris Aboobacker",
+    title: "Serial Entrepreneur, Orator and Social Media Strategist",
+    topic: "",
+    imgSrc: imgFour,
+    alt: "speaker",
+  },
+  {
+    id: 5,
+    name: "Juliana Biju",
+    title: "Europe zone marketing intern at Loreal",
+    topic: "",
+    imgSrc: imgFive,
+    alt: "speaker",
+  }
+ 
+  
 ];
