@@ -23,8 +23,8 @@ const NavBar = ({
   contactRef,
 }) => {
   return (
-    <nav className='navbar navbar-expand-md navbar navbar-dark fixed-top'>
-      <img src={navbrand} className='navbar-brand' alt=',.' />
+    <div className='navbar navbar-expand-md navbar navbar-dark fixed-top' style={{height: "4rem"}}>
+      {/*<img src={navbrand} className='navbar-brand' alt=',.' />*/}
       <button
         className='navbar-toggler ml-auto'
         type='button'
@@ -78,7 +78,7 @@ const NavBar = ({
           </li>
         </NavUL>
       </div>
-    </nav>
+    </div>
   );
 };
 

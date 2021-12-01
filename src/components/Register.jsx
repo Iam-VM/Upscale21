@@ -7,13 +7,13 @@ const Register = () => {
             <div className="register-body">
                 <div className="register-text">
                     <h3>Who can participate?</h3>
-                    <p>Any college students aiming to start an 
-enterprise, dreaming of entrepreneurship 
+                    <p>Any college students aiming to start an
+enterprise, dreaming of entrepreneurship
 can participate</p>
                 </div>
-                <div className="register-btn">
+                <a href={"https://www.yepdesk.com/embed/upscale-21"} target={"_blank"} className="register-btn">
                     <button className="reg-btn">Register Now</button>
-                </div>
+                </a>
             </div>
 
         </div>

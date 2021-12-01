@@ -6,8 +6,8 @@ import bgimg from "../../assets/ellpsebg.png";
 const SpeakerCard = ({ name, title, topic, imgSrc }) => {
   console.log({ name, title, topic });
   return (
-    
-      <div className='speaker-card'>
+
+      <div className='speaker-card' style={{marginBottom: "4rem", marginRight: "0.8rem"}}>
         {" "}
         <div className='speaker-head'>
           <img src={bgimg} className='ellpsebg' alt='ha' />
@@ -29,7 +29,7 @@ const SpeakerCard = ({ name, title, topic, imgSrc }) => {
           <p className='card-text'>{topic}</p>
         </div>
       </div>
-    
+
 
   )
 };

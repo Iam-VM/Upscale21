@@ -12,20 +12,15 @@ const Footer = () => {
         <div>
           <img className='footer-logo' src={upscale} alt='Upscale-21' />
           <h2 className='footer-text copyright'>©2021 IEEE SB GEC Palakkad</h2>
-          
         </div>
         <div>
           <h2 className='footer-head'>Connect with us</h2>
-
           <h2 className='footer-text'>IEEE SB GEC Palakkad</h2>
           <div className='social-container'>
             <a href='https://www.instagram.com/ieeesbgecpkd/' target='_blank'>
               <img className='social' src={insta} alt='insta' />
             </a>
-            <a
-              href='https://www.linkedin.com/company/ieeesbgecpkd'
-              target='_blank'
-            >
+            <a href='https://www.linkedin.com/company/ieeesbgecpkd' target='_blank'>
               <img className='social' src={linkedin} alt='linkedin' />
             </a>
           </div>
@@ -34,10 +29,7 @@ const Footer = () => {
             <a href='https://www.instagram.com/iedcgecpkd/' target='_blank'>
               <img className='social' src={insta} alt='insta' />
             </a>
-            <a
-              href='https://in.linkedin.com/company/iedc-gec-palakkad'
-              target='_blank'
-            >
+            <a href='https://in.linkedin.com/company/iedc-gec-palakkad' target='_blank'>
               <img className='social' src={linkedin} alt='linkedin' />
             </a>
           </div>
@@ -49,10 +41,7 @@ const Footer = () => {
             <a href='https://www.instagram.com/ieeepie.kerala/' target='_blank'>
               <img className='social' src={insta} alt='insta' />
             </a>
-            <a
-              href='https://in.linkedin.com/company/ieee-pie-kerala-section/'
-              target='_blank'
-            >
+            <a href='https://in.linkedin.com/company/ieee-pie-kerala-section/' target='_blank'>
               <img className='social' src={linkedin} alt='linkedin' />
             </a>
           </div>
@@ -62,17 +51,14 @@ const Footer = () => {
           <h2 className='footer-text'>
             Questions or feedback?
           </h2>
-          <h2 className='footer-text'> 
+          <h2 className='footer-text'>
             We'd love to hear from you
           </h2>
           <div className='social-container'>
             <a href='https://www.instagram.com/ieeesbgecpkd/' target='_blank'>
               <img className='socialw' src={instaw} alt='insta' />
             </a>
-            <a
-              href='https://www.linkedin.com/company/ieeesbgecpkd'
-              target='_blank'
-            >
+            <a href='https://www.linkedin.com/company/ieeesbgecpkd' target='_blank'>
               <img className='socialw' src={linkedinw} alt='linkedin' />
             </a>
           </div>

@@ -9,13 +9,14 @@
 }
 .register-body{
     display: flex;
-    
+
 }
 .register-text{
     width: 81%;
     margin-left: 1rem;
 }
 .register-btn{
+    text-decoration: none;
     width: 16%;
     display: flex;
     justify-content: flex-end;
@@ -46,22 +47,37 @@
 }
 @media only screen and (max-width:769px){
     .register-body{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
     .register-container{
         margin: 1rem 4rem;
     }
     .register-text{
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         margin-left: 0;
+
     }
     .register-btn{
         width: 100%;
-        
+        margin-left: 1.5rem;
         justify-content: center;
     }
     .reg-btn{
         margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .register-btn {
+        margin-left: -1.5rem;
     }
 }

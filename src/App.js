@@ -8,6 +8,9 @@ import Schedule from './components/Schedule';
 import Contact from "./components/contact/Contact";
 import Register from './components/Register';
 
+import ideaPitchingImg from './assets/idea-pitching.svg';
+import ideaPitchingImgMob from './assets/idea-pitching-mb.svg';
+
 function App()
 {
   //pass the refs to the corresponding components
@@ -16,7 +19,7 @@ function App()
   const scheduleRef = useRef("schedule")
   const speakerRef = useRef("speaker")
   const contactRef = useRef("contactRef")
-  
+
   const scrollToRef = (ref) =>
   {
 
@@ -37,6 +40,7 @@ function App()
       <Header headerRef={headerRef} />
       <Info infoRef={infoRef} />
       <Register />
+      <IdeaPitchingImg />
       <Schedule scheduleRef={scheduleRef} />
       <Speakers speakerRef={speakerRef} />
       <Contact contactRef={contactRef} />
@@ -44,5 +48,14 @@ function App()
     </>
   );
 }
+
+const IdeaPitchingImg = () => {
+    return (
+        <div style={{width: "100%", display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
+            <img className={"ideaPitchingImg"} src={ideaPitchingImg} alt={"idea pitching schedule"} style={{alignSelf: "center", margin: "2rem auto"}} />
+            <img className={"ideaPitchingImgMob"} src={ideaPitchingImgMob} alt={"idea pitching schedule"} style={{alignSelf: "center", margin: "2rem auto", marginLeft: "-30rem"}} />
+        </div>
+    );
+};
 
 export default App;

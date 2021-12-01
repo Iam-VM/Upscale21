@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+html {
+  overflow-x: hidden;
+}
 
 * {
   box-sizing: border-box;
@@ -15,6 +18,10 @@ body{
 }
 .navbar{
   background-color: #414141;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 .nav-link ,.register-btn{
   margin: 0 15px;
@@ -24,7 +31,7 @@ body{
 }
 .navbar-collapse {
   justify-content: flex-end;
-  margin-top: 15px 15px;
+  /*margin-top: 15px;*/
 }
 .navbar-dark .navbar-toggler {
     color: #414141;
@@ -42,7 +49,7 @@ body{
   width: 50%;
   position: absolute;
   z-index: 1000;
-  top: 4rem;
+  /*top: 4rem;*/
   background-color: #414141;
   right: 1.5rem;
   border: 1px solid #2c2c2c;
@@ -50,7 +57,7 @@ body{
   border-radius: 10px;
   text-align: center;
   padding-bottom: 1rem;
-  
+
 }
 .navbar-nav-brand{
   width: 100%;
@@ -67,7 +74,51 @@ body{
 .container-fluid {
   margin-top: 1rem;
 }
+.scheduleTagContainer {
+  padding: 5px 1rem;
+  /*border: 1px solid red;*/
+  margin-top: 1rem;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.scheduleTagGradContainer {
+  align-self: center;
+  padding: 5px 1rem;
+  background: linear-gradient(90deg, rgba(160,36,173,1) 0%, rgba(244,69,107,1) 100%, rgba(0,0,0,1) 100%);
+  margin-top: 1rem;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  width: 15rem;
+  height: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ideaPitchingImgMob {
+  width: 100%;
+}
+
+
 @media only screen and (min-width:768px) {
+  .ideaPitchingImgMob {
+    display: none;
+  }
+  .scheduleTagContainer {
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+    font-size: 25px;
+  }
+
+  .scheduleTagGradContainer {
+
+  }
+
   .register-now-btn {
     margin-bottom: 0;
   }
@@ -232,7 +283,33 @@ body{
   display: none;
 }
 
+.logo-mobile {
+  display: none;
+}
+
+.dayScheduleMobImg {
+  display: none;
+}
+
+.dayScheduleImg {
+  display: block;
+}
+
 @media only screen and (max-width: 769px) {
+  .dayScheduleImg {
+    display: none;
+  }
+  .dayScheduleMobImg {
+    display:block;
+  }
+  .ideaPitchingImg {
+    display: none;
+  }
+
+  .scheduleTagGradContainer {
+    margin: 2rem auto;
+  }
+
     .logo-container{
         min-width: 200px;
         min-height: 20px;
@@ -323,6 +400,21 @@ body{
   .copyright-mb-2{
     margin-bottom: 2rem;
     display: inline;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-container {
+    display: none;
+  }
+  .logo-mobile {
+    display: block;
+    margin-top: 5rem;
+    max-width: 300px;
+  }
+  .register-btn {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
 }
 

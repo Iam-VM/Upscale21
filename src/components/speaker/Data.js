@@ -32,7 +32,7 @@ export const speakers = [
     id: 4,
     name: "Haris Aboobacker",
     title: "Serial Entrepreneur, Orator and Social Media Strategist",
-    topic: "",
+    topic: "Social Media Marketing",
     imgSrc: imgFour,
     alt: "speaker",
   },
@@ -40,10 +40,10 @@ export const speakers = [
     id: 5,
     name: "Juliana Biju",
     title: "Europe zone marketing intern at Loreal",
-    topic: "",
+    topic: "Interactive Session",
     imgSrc: imgFive,
     alt: "speaker",
   }
- 
-  
+
+
 ];

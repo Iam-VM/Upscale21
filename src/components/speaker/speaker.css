@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   border-bottom: 1px solid #d3d3d381;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
 }
 .speaker-card {
   background-color: #414141 !important;
@@ -90,13 +90,13 @@ margin: auto 2rem;
   }
   .speaker-card {
     width: 65%;
-    
+
     margin-right: auto;
     margin-left: auto;
   }
   .speaker-card-coming-soon{
       width: 65%;
-      
+
     margin-right: auto;
     margin-left: auto;
         min-height: 380px;
